@@ -10,9 +10,6 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -71,18 +68,11 @@ public class MainActivity extends AppCompatActivity {
         registerForContextMenu(listviewAlunos);
     }
 
-    private OnItemClickListener listenerListaAlunos = new OnItemClickListener() {
-        @Override
-        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            Toast.makeText(getApplicationContext(), String.valueOf(l), Toast.LENGTH_SHORT).show();
-        }
-    };
-
     @Override
     public void onCreateContextMenu(ContextMenu menu, View view, ContextMenu.ContextMenuInfo menuInfo){
         if (view.getId() == R.id.listaAlunos){
             MenuInflater menuInflater = getMenuInflater();
-            menuInflater.inflate(R.menu.menu_main, menu);
+            menuInflater.inflate(R.menu.menu_aluno, menu);
         }
     }
 
