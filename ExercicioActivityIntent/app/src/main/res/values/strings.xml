@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExercicioActivityIntent</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cadastro">cadastro</string>
+    <string name="Cadastrar">Cadastrar</string>
+    <string name="Ligar">Ligar</string>
+    <string name="SMS">SMS</string>
+    <string name="Localizacao">Localização</string>
+    <string name="Site">Site</string>
+</resources>
