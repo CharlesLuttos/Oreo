@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Exercicio_1</string>
+    <string name="Ok">OK</string>
+    <string name="seunome">Digite seu nome</string>
+    <string name="seusobrenome">Digite seu sobrenome</string>
+    <string name="Belgica">Bélgica</string>
+    <string name="Argentina">Argentina</string>
+    <string name="Franca">França</string>
+    <string name="Italia">Itália</string>
+    <string name="Noruega">Noruega</string>
+    <string name="Brasil">Brasil</string>
+    <string name="Linear">Linear Activity</string>
+    <string name="Grid">Grid Activity</string>
+    <string name="Table">Table Activity</string>
+    <string name="Relative">Relative Activity</string>
+    <string name="Card">Card Activity</string>
+    <string name="Scroll">Scroll Activity</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exercicio_1</string>
+    <string name="Ok">KO</string>
+    <string name="seunome">Aasd</string>
+    <string name="seusobrenome">asdasd</string>
+    <string name="Belgica">12wqe</string>
+    <string name="Argentina">qweqwe</string>
+    <string name="Franca">qweqwe</string>
+    <string name="Italia">wer</string>
+    <string name="Noruega">sdfdf</string>
+    <string name="Brasil">sdfs</string>
+    <string name="Linear">asdcx</string>
+    <string name="Grid">xcv</string>
+    <string name="Table">cvb</string>
+    <string name="Relative">xcv</string>
+    <string name="Card">xcv</string>
+</resources>

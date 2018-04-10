@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.luttos.exercicio_1.MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Scroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toEndOf="@+id/buttonRelative"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCard"
+        app:layout_constraintVertical_bias="0.354"
+        tools:text="@string/Scroll" />
+
+    <Button
+        android:id="@+id/buttonRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Relative"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTable"
+        app:layout_constraintVertical_bias="0.354"
+        tools:text="@string/Relative" />
+
+    <Button
+        android:id="@+id/buttonCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toEndOf="@+id/buttonTable"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGrid"
+        tools:text="@string/Card" />
+
+    <Button
+        android:id="@+id/buttonTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Table"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLinear"
+        tools:text="@string/Table" />
+
+    <Button
+        android:id="@+id/buttonLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Linear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/Linear" />
+
+    <Button
+        android:id="@+id/buttonGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Grid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/buttonLinear"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/Grid" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackBuy">#8c40ff</color>
+    <color name="colorNorwegianBlue">#102dc1</color>
+    <color name="colorNightlyBuilds">#8cff40</color>
+    <color name="colorBackStories">#f9ff40</color>
+    <color name="colorOffShore">#00a6ff</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorGray">#6c6c6c</color>
+    <color name="colorBlue">#020afc</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorOrange">#ff8800</color>
+    <color name="colorYellow">#ffe600</color>
+    <color name="colorWhite">#ffffff</color>
+</resources>
