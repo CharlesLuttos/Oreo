@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 import java.util.ArrayList;
@@ -85,11 +85,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 1){
-            String aluno = data.getStringExtra("Aluno");
-            //alunos.add(aluno);
-            Toast.makeText(getApplicationContext(), aluno+" Adicionado", Toast.LENGTH_SHORT).show();
-            //arrayAdapter.notifyDataSetChanged();
-        }
+        Student aluno = data.getParcelableExtra("Aluno");
+        studentList.add(aluno);
+        Toast.makeText(getApplicationContext(), aluno.getNome()+" Adicionado", Toast.LENGTH_SHORT).show();
+        studentAdapter.notifyDataSetChanged();
+
     }
 }

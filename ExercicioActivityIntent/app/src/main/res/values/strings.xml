@@ -7,6 +7,7 @@
     <string name="SMS">SMS</string>
     <string name="Localizacao">Localização</string>
     <string name="Site">Site</string>
-    <string name="Matricula">2736455</string>
-    <string name="Nome">Alvaro da silva</string>
+    <string name="Matricula">Matricula</string>
+    <string name="Nome">Nome</string>
+    <string name="CadastroAlunos">Cadastro de alunos</string>
 </resources>

@@ -1,10 +1,13 @@
 package com.android.luttos.exercicioactivityintent;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * Created by Luttos on 15/04/18.
  */
 
-public class Student {
+public class Student implements Parcelable{
     private int matricula;
     private String nome;
 
@@ -24,6 +27,22 @@ public class Student {
         this.nome = nome;
     }
 
+    private Student(Parcel from){
+        matricula = from.readInt();
+        nome = from.readString();
+    }
+
+    public static final Parcelable.Creator<Student> CREATOR = new Parcelable.Creator<Student>(){
+        public Student createFromParcel(Parcel in){
+            return new Student(in);
+        }
+
+        @Override
+        public Student[] newArray(int size) {
+            return new Student[size];
+        }
+    };
+
     public Student(){}
 
     public Student(int matricula){
@@ -33,5 +52,16 @@ public class Student {
     public Student(int matricula, String nome){
         this.matricula = matricula;
         this.nome = nome;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(matricula);
+        dest.writeString(nome);
     }
 }
