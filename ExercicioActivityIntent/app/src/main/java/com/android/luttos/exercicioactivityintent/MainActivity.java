@@ -14,10 +14,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<String> alunos;
-    ArrayAdapter<String> arrayAdapter;
+    List<Student> studentList;
+    StudentAdapter studentAdapter;
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,11 +63,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void carregaLista(){
-        alunos = new ArrayList<>();
-        arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_gallery_item,alunos);
-        ListView listviewAlunos = findViewById(R.id.listaAlunos);
-        listviewAlunos.setAdapter(arrayAdapter);
-        registerForContextMenu(listviewAlunos);
+        listView = findViewById(R.id.listaAlunos);
+        listView.setEmptyView(findViewById(android.R.id.empty));
+        studentList = new ArrayList<Student>();
+        studentList.add(new Student(234, "Andre"));
+        studentList.add(new Student(235, "Junior"));
+        studentAdapter = new StudentAdapter(this, studentList);
+        listView.setAdapter(studentAdapter);
+        registerForContextMenu(listView);
+
     }
 
     @Override
@@ -81,9 +87,9 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1){
             String aluno = data.getStringExtra("Aluno");
-            alunos.add(aluno);
+            //alunos.add(aluno);
             Toast.makeText(getApplicationContext(), aluno+" Adicionado", Toast.LENGTH_SHORT).show();
-            arrayAdapter.notifyDataSetChanged();
+            //arrayAdapter.notifyDataSetChanged();
         }
     }
 }

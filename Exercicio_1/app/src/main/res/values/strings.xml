@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Exercicio_1</string>
     <string name="Ok">OK</string>
+    <string name="Nome">Alvaro da silva</string>
+    <string name="Telefone">2736455</string>
     <string name="seunome">Digite seu nome</string>
     <string name="seusobrenome">Digite seu sobrenome</string>
     <string name="Belgica">Bélgica</string>
@@ -15,4 +17,5 @@
     <string name="Relative">Relative Activity</string>
     <string name="Card">Card Activity</string>
     <string name="Scroll">Scroll Activity</string>
+    <string name="Design">Design Activity</string>
 </resources>
