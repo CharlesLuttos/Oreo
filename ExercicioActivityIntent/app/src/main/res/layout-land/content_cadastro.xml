@@ -9,7 +9,6 @@
     tools:context="com.android.luttos.exercicioactivityintent.Cadastro"
     tools:showIn="@layout/activity_cadastro">
 
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
